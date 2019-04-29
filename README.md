@@ -11,5 +11,5 @@ There are many types of quantitative timing strategies. Considering the lack of 
 
 ## 1.2 Strategic core idea
 The core idea of this paper's strategy is to judge the current price trend according to the technical indicators, to buy the target when rising trends appear and earn the profit by following the trend. And if there are downward trends, we just sell out the portfolio to stop loss.
-This paper mainly uses four technical indicators including ADX, HMA, FRAMA and KAMA. These four technical indicators are all from the research reports of Liangxin Investment Corporation. According to the research report of the company, the timing strategy based on these four indicators can obtain significant excess returns on the Shanghai Composite Index. This article will re-implements these four indicators and tests their effectiveness in digital currency.
+This paper mainly uses four technical indicators including ADX, HMA, FRAMA and KAMA. These four technical indicators are all from the research reports of [*Liangxin Investment Corporation*](http://www.liang-xin.com/website/w/h?). According to the research report of the company, the timing strategy based on these four indicators can obtain significant excess returns on the Shanghai Composite Index. This article will re-implements these four indicators and tests their effectiveness in digital currency.
 
