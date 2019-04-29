@@ -24,11 +24,3 @@ cryptodatadownload.com provides daily, hourly quote data for cryptocurrency on m
 
 1. Calculate<a href="https://www.codecogs.com/eqnedit.php?latex=upmove_{t}=high_{t}-high_{t-1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?upmove_{t}=high_{t}-high_{t-1}" title="upmove_{t}=high_{t}-high_{t-1}" /></a>
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-居中格式: $$xxx$$
-$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
-$$upmove_{t}=high_{t}-high_{t-1}
-
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" style="border:none;">
