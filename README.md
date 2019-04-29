@@ -29,5 +29,7 @@ The ADX strategy is based on the investment strategy of the technical indicator 
 1. Calculate $upmove$ and $downmove$:
 $$
 upmove_{t}=high_{t}-high_{t-1}
+$$
+$$
 downmove_{t}=low_{t-1}-low_{t}
 $$
