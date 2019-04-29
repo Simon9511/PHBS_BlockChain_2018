@@ -22,7 +22,11 @@ The bitcoin price perfectly meets the above two conditions. Bitcoin prices have 
 All data used in this article is obtained from [*cryptodatadownload.com*](www.cryptodatadownload.com). cryptodatadownload.com is a website that collects information on various cryptocurrency prices. The website provides data download service. We download the cryptocurrency price locally and then use python for data analysis.
 cryptodatadownload.com provides daily, hourly quote data for cryptocurrency on multiple cryptocurrency trading platforms. To facilitate uniform comparison, we quote the quotation data of the [*Bitstamp*](https://www.bitstamp.net/) trading platform here (in US dollars). Founded in 2011, Bitstamp is one of the world's oldest cryptocurrency exchange platform. Therefore, using data from Bitstamp is very reliable.
 
-1. Calculate<a href="https://www.codecogs.com/eqnedit.php?latex=upmove_{t}=high_{t}-high_{t-1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?upmove_{t}=high_{t}-high_{t-1}" title="upmove_{t}=high_{t}-high_{t-1}" /></a>
+# 2 ADX strategy
+The ADX strategy is based on the investment strategy of the technical indicator ADX. The ADX indicator is a composite technical indicator calculated by the opening price, closing price, highest price and lowest price of the target, which can be used to quantify the current market trend strength. According to the ADX indicator, we first judge whether there is a trend in the current market. If there is a trend, then compare with the recent increase and other data to determine whether it is an upward trend, if it is determined to be an upward trend, then follow the trend to buy to earn excess returns.
+
+## 2.1 ADX calculation method
+1. Calculate $upmove$ and $downmove$
 
 $$
 upmove_{t}=high_{t}-high_{t-1}
