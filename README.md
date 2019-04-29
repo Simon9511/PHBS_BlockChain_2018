@@ -23,3 +23,5 @@ All data used in this article is obtained from [*cryptodatadownload.com*](www.cr
 cryptodatadownload.com provides daily, hourly quote data for cryptocurrency on multiple cryptocurrency trading platforms. To facilitate uniform comparison, we quote the quotation data of the [*Bitstamp*](https://www.bitstamp.net/) trading platform here (in US dollars). Founded in 2011, Bitstamp is one of the world's oldest cryptocurrency exchange platform. Therefore, using data from Bitstamp is very reliable.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=upmove_{t}=high_{t}-high_{t-1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?upmove_{t}=high_{t}-high_{t-1}" title="upmove_{t}=high_{t}-high_{t-1}" /></a>
+
+upmove_{t}=high_{t}-high_{t-1}
