@@ -84,18 +84,9 @@ First, we perform back test on the Shanghai Composite Index. The time period for
 The strategy net value curve:
 The strategy performance statistical indicators:
 
-    | 水果        | 价格    |  数量  |
-    | --------   | -----:   | :----: |
-    | 香蕉        | $1      |   5    |
-    | 苹果        | $1      |   6    |
-    | 草莓        | $1      |   7    |
-
-
-
- 表头  | 表头  | 表头
- ---- | ----- | ------  
- 单元格内容  | 单元格内容 | 单元格内容 
- 单元格内容  | 单元格内容 | 单元格内容
+                    Annual Profit  | Max Drawdown  | Sharpe Ratio
+                    ---- | ----- | ------  
+                     17.2%  | 26.2% | 2.27
 
 
 
