@@ -85,7 +85,7 @@ The strategy net value curve:
 The strategy performance statistical indicators:
 
 Annual Profit  | Max Drawdown  | Sharpe Ratio
----- | ----- | ------  
+:----: | :-----: | :------:  
 17.2%  | 26.2% | 2.27
 
 
