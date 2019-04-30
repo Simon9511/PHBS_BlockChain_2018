@@ -33,9 +33,9 @@ $$
 $$
 DownMove_{t}=low_{t-1}-low_{t}
 $$
-2. Calculate $DMplus$ and $DMminus$:
-When $UpMove > max(DownMove, 0)$, $DMplus=UpMove$; else, $DMplus=0$
-When $DownMove > max(UpMove, 0)$, $DMminus=DownMove$; else, $DMminus=0$
+2. Calculate $DMplus$ and $DMminus$:\\
+When $UpMove > max(DownMove, 0)$, $DMplus=UpMove$; else, $DMplus=0$\\
+When $DownMove > max(UpMove, 0)$, $DMminus=DownMove$; else, $DMminus=0$\\
 
 
 
