@@ -68,8 +68,15 @@ We use the same parameters to calculate the ADX indicator of BTC. And we can see
 ![BTC ADX](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/ADX_BTC.png)
 From the graph above, you may notice that even when there is strong downward trend in the market, the ADX value is still very high, and think ADX may have some mistake in these situations. Actually, as we said earlier, the ADX indicator is only used to judge the strength of the trend, not to judge the direction of the trend. Therefore, when constructing a strategy, we will first judge the strength of the trend according to the ADX indicator. If the trend is strong, we will judge the direction of the trend based on other criterion. Therefore, the fact that the ADX index is high when the market falls does not affect the construction of our strategy.
 
-
-
+## 2.3 ADX timing strategy construction
+### 2.3.1 Strategy core idea
+According to the above mentioned repeatedly, the ADX indicator can judge the significant trend very well. Therefore, when constructing an investment strategy, we first judge whether the current market is in a trend based on the value of the ADX. When ADX is greater than a certain threshold, we believe that it is currently in a trend situation and make the next decision. When the market is in a trend situation, we can judge whether the current stock price is in a rising trend or a downward trend based on the current stock price and the stock price comparison in the previous period.
+### 2.3.2 Strategy details
+In this strategy, we need to complete two judgments: buy judgment and sell judgment.
+When the market conditions meet the buying criteria, we buy the target and continue to hold it. When the market conditions touch the selling criteria, we sell the portfolio and obtain the profit. The strategy is as follows:
+- When the ADX value is greater than 35, and the stock price is greater than the stock price before 30 days, we buy the target.
+- When the stock price decreased by 10% compared to the price of a month ago, or the max drawdown of recent one month is more than 15%, the sell out operation will be carried out. Otherwise we will always hold the position.
+The opening criteria of this strategy are very strict. When ADX is greater than 35 and the stock price is rising, we believe that the significant uptrend is already determined. It is precisely because our opening criteria are very strict, unless there are special circumstances, we will always keep the investment target. We only close the position when the net value of the stock falls below the stop loss line we set.
 
 
 
