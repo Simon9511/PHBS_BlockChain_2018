@@ -36,7 +36,8 @@ $$
 2. Calculate $DMplus$ and $DMminus$:<br>
 When $UpMove > max(DownMove, 0)$, $DMplus=UpMove$; else, $DMplus=0$<br>
 When $DownMove > max(UpMove, 0)$, $DMminus=DownMove$; else, $DMminus=0$<br>
-3. Calculate the true volatility of the day (denoted as TR), which is equal to the maximum of the following three values: the difference between $high_t$ and $low_t$, the absolute value of today's highest price and yesterday's closing price, today's lowest price and yesterday's closing Absolute value of the price difference
+
+3. Calculate the true volatility of the day (denoted as TR), which is equal to the maximum of the following three values: the difference between $high_t$ and $low_t$, the absolute value of difference between $high_t$ and $close_{t-1}$ and the absolute value of the difference between $low_t$ and $close_{t-1}$.
 
 
 
