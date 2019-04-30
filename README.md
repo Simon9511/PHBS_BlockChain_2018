@@ -84,9 +84,9 @@ First, we perform back test on the Shanghai Composite Index. The time period for
 The strategy net value curve:
 The strategy performance statistical indicators:
 
-Annual Profit  | Max Drawdown  | Sharpe Ratio
-:----: | :-----: | :------:  
-17.2%  | 26.2% | 2.27
+  Annual Profit  | Max Drawdown  | Sharpe Ratio
+  :----: | :-----: | :------:  
+  17.2%  | 26.2% | 2.27
 
 
 
