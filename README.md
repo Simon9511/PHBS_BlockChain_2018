@@ -43,7 +43,7 @@ When $DownMove > max(UpMove, 0)$, $DMminus=DownMove$; else, $DMminus=0$<br>
 -The first value of $TRN$ is the sum of $TR$ for the past n days (including the current day);<br>
 -Starting from the second value, the $TRN_t = TRN_{t-1} × (n - 1) / n + TR_t$
 
-5. Calculate $DIplusN$ and $DIminusN:
+5. Calculate $DIplusN$ and $DIminusN$:
 $$
 DIplusN = 100 * DMplusN / TRN
 $$
