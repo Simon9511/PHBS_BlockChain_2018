@@ -37,7 +37,12 @@ $$
 When $UpMove > max(DownMove, 0)$, $DMplus=UpMove$; else, $DMplus=0$<br>
 When $DownMove > max(UpMove, 0)$, $DMminus=DownMove$; else, $DMminus=0$<br>
 
-3. Calculate the true volatility of the day (denoted as TR), which is equal to the maximum of the following three values: the difference between $high_t$ and $low_t$, the absolute value of difference between $high_t$ and $close_{t-1}$ and the absolute value of the difference between $low_t$ and $close_{t-1}$.
+3. Calculate the true volatility of the day (denoted as $TR$), which is equal to the maximum of the following three values: the difference between $high_t$ and $low_t$, the absolute value of difference between $high_t$ and $close_{t-1}$ and the absolute value of the difference between $low_t$ and $close_{t-1}$.
+
+4. For $DMplus$, $DMminus$, and $TR$, we use the smooth motion algorithm to calculate the sum of n periods, denoted as $DMplusN$, $DMminusN$, and $TRN$ respectively. Take $TRN$ as an example, its calculation method is:<br>
+-The first value of $TRN$ is the sum of $TR$ for the past n days (including the current day);
+-Starting from the second value, the $TRN_t = $TRN_{t-1} × (n - 1) / n + TR_t$
+
 
 
 
