@@ -78,6 +78,10 @@ When the market conditions meet the buying criteria, we buy the target and conti
 - When the stock price decreased by 10% compared to the price of a month ago, or the max drawdown of recent one month is more than 15%, the sell out operation will be carried out. Otherwise we will always hold the position.<br>
 
 The opening criteria of this strategy are very strict. When ADX is greater than 35 and the stock price is rising, we believe that the significant uptrend is already determined. It is precisely because our opening criteria are very strict, unless there are special circumstances, we will always keep the investment target. We only close the position when the net value of the stock falls below the stop loss line we set.
+## 2.4 Strategy performance
+### 2.4.1 Shanghai Composite Index
+First, we perform back test on the Shanghai Composite Index. The time period for the backtesting is from 2005 to 2018. Because this time period includes various market conditions such as bear market, bull market and shock market, the back test results are more persuative.<br>
+The strategy net value curve:
 
 
 
