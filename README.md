@@ -33,12 +33,12 @@ $$
 $$
 DownMove_{t}=low_{t-1}-low_{t}
 $$
-2. Calculate $DM_plus$ and $DM_minus$:
+2. Calculate $DMplus$ and $DMminus$:
 $$
-DM_plus=UpMove if UpMove>max(DownMove, 0) else 0
+DMplus=UpMove if UpMove > max(DownMove, 0) else 0
 $$
 $$
-DM_minus=DownMove if DownMove>max(UpMove, 0) else 0
+DMminus=DownMove if DownMove > max(UpMove, 0) else 0
 $$
 
 
