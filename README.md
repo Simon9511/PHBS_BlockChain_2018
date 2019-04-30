@@ -41,7 +41,7 @@ When $DownMove > max(UpMove, 0)$, $DMminus=DownMove$; else, $DMminus=0$<br>
 
 4. For $DMplus$, $DMminus$, and $TR$, we use the smooth motion algorithm to calculate the sum of n periods, denoted as $DMplusN$, $DMminusN$, and $TRN$ respectively. Take $TRN$ as an example, its calculation method is:<br>
 -The first value of $TRN$ is the sum of $TR$ for the past n days (including the current day);<br>
--Starting from the second value, the $TRN_t = $TRN_{t-1} × (n - 1) / n + TR_t$
+-Starting from the second value, the $TRN_t = TRN_{t-1} × (n - 1) / n + TR_t$
 
 
 
