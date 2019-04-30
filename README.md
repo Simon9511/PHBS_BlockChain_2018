@@ -51,6 +51,11 @@ $$
 DIminusN = 100 * DMminusN / TRN
 $$
 
+6. Calculate the direction motion index $DX$:
+$$
+DX = 100 * |(DIplusN – DIminusN) / (DIplusN + DIminusN)|
+$$
+
 
 
 
