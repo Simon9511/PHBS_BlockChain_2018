@@ -66,7 +66,7 @@ The blue curve in the figure below is the ADX value of the weekly frequency data
 ![000001.XSHG ADX](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/ADX_000001.png)
 We use the same parameters to calculate the ADX indicator of BTC. And we can see from the picture below that ADX can also indicates significant trend in BTC price (in the circled area, there is a significant rising trend in BTC with a relatively high ADX value).
 ![BTC ADX](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/ADX_BTC.png)
-
+From the graph above, you may notice that even when there is strong downward trend in the market, the ADX value is still very high, and think ADX may have some mistake in these situations. Actually, as we said earlier, the ADX indicator is only used to judge the strength of the trend, not to judge the direction of the trend. Therefore, when constructing a strategy, we will first judge the strength of the trend according to the ADX indicator. If the trend is strong, we will judge the direction of the trend based on other criterion. Therefore, the fact that the ADX index is high when the market falls does not affect the construction of our strategy.
 
 
 
