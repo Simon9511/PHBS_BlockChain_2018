@@ -26,10 +26,39 @@ cryptodatadownload.com provides daily, hourly quote data for cryptocurrency on m
 The ADX strategy is based on the investment strategy of the technical indicator ADX. The ADX indicator is a composite technical indicator calculated by the opening price, closing price, highest price and lowest price of the target, which can be used to quantify the current market trend strength. According to the ADX indicator, we first judge whether there is a trend in the current market. If there is a trend, then compare with the recent increase and other data to determine whether it is an upward trend, if it is determined to be an upward trend, then follow the trend to buy to earn excess returns.
 
 ## 2.1 ADX calculation method
-1. Calculate $upmove$ and $downmove$:
+1. Calculate $UpMove$ and $DownMove$:
 $$
-upmove_{t}=high_{t}-high_{t-1}
+UpMove_{t}=high_{t}-high_{t-1}
 $$
 $$
-downmove_{t}=low_{t-1}-low_{t}
+DownMove_{t}=low_{t-1}-low_{t}
 $$
+2. Calculate $DM_plus$ and $DM_minus$:
+$$
+DM_plus=UpMove if UpMove>max(DownMove, 0) else 0
+$$
+$$
+DM_minus=DownMove if DownMove>max(UpMove, 0) else 0
+$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
