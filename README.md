@@ -63,7 +63,7 @@ $$
 ## 2.1 Meaning of ADX indicators
 Although the process of calculating ADX is cumbersome, during which we use a lot of auxiliary variables, the meaning behind ADX is very clear. $DIplusN$ and $DIminusN$ describe recent ups and downs respectively. Whether it is rising or falling, as long as the trend is significant, there will always be a larger one among $DIplusN$ and $DIminusN$. So the value of $DX = 100 × abs((DIplusN – DIminusN) / (DIplusN + DIminusN))$ will range from 0 to 100. The more significant the trend is, the bigger the $DX$ is.Since $ADX$ is the smoothed mean of $DX$, $ADX$ can describe the strength of recent trends. Because the absolute value is taken when calculating $DX$, this results in $ADX$ values ranging from 0 to 100, so $ADX$ itself only describes the strength of the trend and does not indicate the direction of the trend. However, the direction of the trend can still be judged by the size of $DIplusN$ and $DIminusN$ (or other methods).
 The blue curve in the figure below is the ADX value of the weekly frequency data of the Shanghai Composite Index over the past 12 years (n = 8 when calculating the smoothing mean). It is not difficult to see that there is significant rising trend in the circled area. And at the same time the ADX value in these area is also significantly high, which means ADX indicators can indicate the strength of the trend of stock price.
-
+![000001.XSHG ADX](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/ADX_000001.png)
 
 
 
