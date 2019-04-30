@@ -83,7 +83,7 @@ The opening criteria of this strategy are very strict. When ADX is greater than 
 First, we perform back test on the Shanghai Composite Index. The time period for the backtesting is from 2005 to 2018. Because this time period includes various market conditions such as bear market, bull market and shock market, the back test results are more persuative.<br>
 The strategy net value curve:
 The strategy performance statistical indicators:
-| 水果        | 价格    |  数量  |
+    | 水果        | 价格    |  数量  |
     | --------   | -----:   | :----: |
     | 香蕉        | $1      |   5    |
     | 苹果        | $1      |   6    |
