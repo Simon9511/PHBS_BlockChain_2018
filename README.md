@@ -14,6 +14,7 @@ There are many types of quantitative timing strategies. Considering the lack of 
 
 ## 1.2 Strategic core idea
 The core idea of this paper's strategy is to judge the current price trend according to the technical indicators, and to buy the target when rising trends appear and earn the profits by following the trend. And if there are downward trends, we just sell out the portfolio to stop loss.
+
 This paper mainly uses two technical indicators (MA and ADX). These two technical indicators are both calculated from price data of the target and indicate the trend of the target price. Based on the value of these indicators, we can determine the present trend and make our investment decision.
 
 ## 1.3 Why can we use timing strategy on cryptocurrency?
