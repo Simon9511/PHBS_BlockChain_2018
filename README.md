@@ -99,7 +99,7 @@ The statistical indicators of strategic performance are as follows:
   :----: | :-----: | :------:  
   60.6%  | 59.9% | -2.18
   
- 
+From the results of the strategy backtesting, it is obvious that ADX strategy is not effective on Bitcoin, and the net value of the strategy does not catch up with the net value of the bitcoin price. Nonetheless, the annualized rate of return of the strategy has reached an astonishing 60%. The reason for this is that Bitcoin price has risen madly in the first few years of its existence, and the strategy of this strategy is very strict, which has led to the strategy missing many investment opportunities. After the bitcoin bubble burst, the price of Bitcoin fluctuated greatly, and this strategy could not capture a big upward trend.
 
 
 
