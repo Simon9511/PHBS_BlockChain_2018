@@ -112,7 +112,7 @@ The statistical indicators of strategic performance are as follows:
   Annual Profit  | Max Drawdown  | Sharpe Ratio
   :----: | :-----: | :------:  
   32.5%  | 33.0% | 17.0
-  
+<br>  
  
   - LTC
 Strategy net value curve:
@@ -122,7 +122,7 @@ The statistical indicators of strategic performance are as follows:
   Annual Profit  | Max Drawdown  | Sharpe Ratio
   :----: | :-----: | :------:  
   72.2%  | 77.6% | 5.62
-  
+<br>  
   
   - XRP
 Strategy net value curve:
@@ -132,6 +132,6 @@ The statistical indicators of strategic performance are as follows:
   Annual Profit  | Max Drawdown  | Sharpe Ratio
   :----: | :-----: | :------:  
   540.2%  | 55.4% | 11.0
-
+<br>
 
 
