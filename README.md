@@ -107,6 +107,7 @@ We also use our ADX strategy on other cryptocurrency to see its performance.
   - ETH
 Strategy net value curve:
 ![strategy net value on eth](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_ETH.png)<br>
+
 The statistical indicators of strategic performance are as follows:
 
   Annual Profit  | Max Drawdown  | Sharpe Ratio
@@ -117,6 +118,7 @@ The statistical indicators of strategic performance are as follows:
   - LTC
 Strategy net value curve:
 ![strategy net value on LTC](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_LTC.png)
+
 The statistical indicators of strategic performance are as follows:
 
   Annual Profit  | Max Drawdown  | Sharpe Ratio
@@ -127,6 +129,7 @@ The statistical indicators of strategic performance are as follows:
   - XRP
 Strategy net value curve:
 ![strategy net value on btc](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_XRP.png)
+
 The statistical indicators of strategic performance are as follows:
 
   Annual Profit  | Max Drawdown  | Sharpe Ratio
