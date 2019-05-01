@@ -135,6 +135,5 @@ The statistical indicators of strategic performance are as follows:
   Annual Profit  | Max Drawdown  | Sharpe Ratio
   :----: | :-----: | :------:  
   540.2%  | 55.4% | 11.0
-<br>
 Based on the net value curve and the strategy statistics, we can see that the application of this strategy in other cryptocurrency(such as Ethereum and Litecoin) is more effective than on Bitcoin. In these other cryptocurrency, the strategy can achieve excellent annual yields, while at the same time they have excess returns. This is mainly because the prices of these other digital currencies are not as frantic as the bitcoin, but the trend is more obvious, so the strategy can capture a large upward trend. In Bitcoin, bitcoin prices have risen too much because of the previous expansion and the strategy can not keep pace with the rise in bitcoin prices. That's why the strategy is significantly better on other cryptocurrency than on Bitcoin.
 
