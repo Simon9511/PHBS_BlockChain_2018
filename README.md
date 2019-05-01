@@ -147,7 +147,7 @@ Short-term trends in the market can be quantified using short-period moving aver
 ## 3.2 Strategy details
 This strategy also requires two judgments: buy judgements and sell judgement. The criteria are as follows:
 - When the target's 5-day moving average value is greater than the 30-day moving average value, it means the market's short-term uptrend is strong, so we need to carry out the buying operation.
-- When the target 5-day moving average value is less than the 10-day moving average, it indicates that the short-term downtrend of the market is strong, and we should sell out the target.
+- When the target 5-day moving average value is less than the 10-day moving average, it indicates that the short-term downtrend of the market is strong, and we should sell out the target.<br>
 The reason why when making the buy-in judgment we use the 30-day moving average while the 10-day moving average is used when making selling judgement is because when we make the buying judgment, we hope to wait for the trend signal to be fully confirmed and then buy the position. Although using 30-day average value, the buying decision may be made a little later and we may lose some part of profit, it helps us to increase the accuracy of the judgement. When making selling decision, by using the 10-day moving average to judge, we can ensure that when the downtrend comes we can stop the loss timely.
 In this strategy, we did not use many parameters, because when the numbers of parameters increase, the model has the risk of over-fitting. The simplest and straightforward idea helps us to test whether this investment logic is effective.
 3.3 Strategy performance
