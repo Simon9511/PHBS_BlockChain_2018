@@ -91,7 +91,8 @@ The strategy performance statistical indicators:
 
 From the net value curve of the strategy back test, we can see that this strategy can capture the market's rising trend (as shown in the black box), and this strategy will not trade when the market is volatile. After 10 years of investment, the net value of the strategy has more than 7 times, and the annualized rate of return has reached 17.2%, and the Sharp rate has reached 2.27, which is a good result. The maximum drawback of the strategy is 26.2%, which is relatively large, because in order not to miss the big uptrend, we set the stop loss line loosely. The advantage of this is that it will not miss the follow-up trend when the big trend comes, and the bad thing is that when the trend ends, the drawback is relatively large.
 
-Next, let us look at the application of this strategy on Bitcoin. In order to maintain the consistency of the strategy, we use the same parameters as the above strategy for backtesting. The backtesting period was selected from 2005 to 2019. The strategy net value curve is shown below:
+### 2.4.2 Bitcoin
+Next, let us look at the application of this strategy on Bitcoin. In order to avoid overfitting problem, we don't choose a special parameter for Bitcoin and just use the same parameters as the above strategy for backtesting. The backtesting period was selected from 2005 to 2019. The strategy net value curve is shown below:
 ![strategy net value on btc](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_BTC.png)
 The statistical indicators of strategic performance are as follows:
 
@@ -101,8 +102,33 @@ The statistical indicators of strategic performance are as follows:
   
 From the results of the strategy backtesting, it is obvious that ADX strategy is not effective on Bitcoin, and the net value of the strategy does not catch up with the net value of the bitcoin price. Nonetheless, the annualized rate of return of the strategy has reached an astonishing 60%. The reason for this is that Bitcoin price has risen madly in the first few years of its existence, and the strategy of this strategy is very strict, which has led to the strategy missing many investment opportunities. After the bitcoin bubble burst, the price of Bitcoin fluctuated greatly, and this strategy could not capture a big upward trend.
 
+### 2.4.3 Other cryptocurrency
+- ETH
+Strategy net value curve:
+![strategy net value on eth](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_ETH.png)
+The statistical indicators of strategic performance are as follows:
 
+  Annual Profit  | Max Drawdown  | Sharpe Ratio
+  :----: | :-----: | :------:  
+  32.5%  | 33.0% | 17.0
+  
+  - LTC
+Strategy net value curve:
+![strategy net value on LTC](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_LTC.png)
+The statistical indicators of strategic performance are as follows:
 
+  Annual Profit  | Max Drawdown  | Sharpe Ratio
+  :----: | :-----: | :------:  
+  72.2%  | 77.6% | 5.62
+  
+  - XRP
+Strategy net value curve:
+![strategy net value on btc](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_XRP.png)
+The statistical indicators of strategic performance are as follows:
+
+  Annual Profit  | Max Drawdown  | Sharpe Ratio
+  :----: | :-----: | :------:  
+  540.2%  | 55.4% | 11.0
 
 
 
