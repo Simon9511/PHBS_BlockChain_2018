@@ -103,7 +103,7 @@ The statistical indicators of strategic performance are as follows:
 From the results of the strategy backtesting, it is obvious that ADX strategy is not effective on Bitcoin, and the net value of the strategy does not catch up with the net value of the bitcoin price. Nonetheless, the annualized rate of return of the strategy has reached an astonishing 60%. The reason for this is that Bitcoin price has risen madly in the first few years of its existence, and the strategy of this strategy is very strict, which has led to the strategy missing many investment opportunities. After the bitcoin bubble burst, the price of Bitcoin fluctuated greatly, and this strategy could not capture a big upward trend.
 
 ### 2.4.3 Other cryptocurrency
-We also use our ADX strategy on other cryptocurrency to see its performance.
+Next, we apply our strategy to other cryptocurrency. Similarly, in order to avoid over-fitting, we have no intention of adjusting the strategy parameters, but applying the same parameters as the initial strategy. The strategy performances are as follows.
   - ETH
 Strategy net value curve:
 ![strategy net value on eth](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_ETH.png)<br>
@@ -136,5 +136,5 @@ The statistical indicators of strategic performance are as follows:
   :----: | :-----: | :------:  
   540.2%  | 55.4% | 11.0
 <br>
-
+Based on the net value curve and the strategy statistics, we can see that the application of this strategy in other cryptocurrency(such as Ethereum and Litecoin) is more effective than on Bitcoin. In these other cryptocurrency, the strategy can achieve excellent annual yields, while at the same time they have excess returns. This is mainly because the prices of these other digital currencies are not as frantic as the bitcoin, but the trend is more obvious, so the strategy can capture a large upward trend. In Bitcoin, bitcoin prices have risen too much because of the previous expansion and the strategy can not keep pace with the rise in bitcoin prices. That's why the strategy is significantly better on other cryptocurrency than on Bitcoin.
 
