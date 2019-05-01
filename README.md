@@ -138,3 +138,49 @@ The statistical indicators of strategic performance are as follows:
 
 Based on the net value curve and the strategy statistics, we can see that the application of this strategy in other cryptocurrency(such as Ethereum and Litecoin) is more effective than on Bitcoin. In these other cryptocurrency, the strategy can achieve excellent annual yields, while at the same time they have excess returns. This is mainly because the prices of these other digital currencies are not as frantic as the bitcoin, but the trend is more obvious, so the strategy can capture a large upward trend. In Bitcoin, bitcoin prices have risen too much because of the previous expansion and the strategy can not keep pace with the rise in bitcoin prices. That's why the strategy is significantly better on other cryptocurrency than on Bitcoin.
 
+# 3 MA strategy
+The MA strategy is another common strategy for quantitative investment. The strategy idea is very simple. It use the short-term moving average and the long-term moving average to judge the recent strength of the market, and then determine whether to buy or sell the target.
+
+## 3.1 Strategy idea
+Short-term trends in the market can be quantified using short-period moving averages, while long-term trends in the market can be quantified using longer-period moving averages. When the short-term moving average wears the long-term moving average, the two moving averages cross, and we call this cross a golden cross. Similarly, when the short-term moving average wears the long-term moving average, it is called the dead cross.
+
+## 3.2 Strategy details
+This strategy also requires two judgments: buy judgements and sell judgement. The criteria are as follows:
+- When the target's 5-day moving average value is greater than the 30-day moving average value, it means the market's short-term uptrend is strong, so we need to carry out the buying operation.
+- When the target 5-day moving average value is less than the 10-day moving average, it indicates that the short-term downtrend of the market is strong, and we should sell out the target.
+The reason why when making the buy-in judgment we use the 30-day moving average while the 10-day moving average is used when making selling judgement is because when we make the buying judgment, we hope to wait for the trend signal to be fully confirmed and then buy the position. Although using 30-day average value, the buying decision may be made a little later and we may lose some part of profit, it helps us to increase the accuracy of the judgement. When making selling decision, by using the 10-day moving average to judge, we can ensure that when the downtrend comes we can stop the loss timely.
+In this strategy, we did not use many parameters, because when the numbers of parameters increase, the model has the risk of over-fitting. The simplest and straightforward idea helps us to test whether this investment logic is effective.
+3.3 Strategy performance
+We still tested our strategic thinking on four digital currencies. The results of the strategy are as follows:
+- ETH
+Strategy net value curve:
+![strategy net value on eth](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_ETH.png)<br>
+
+The statistical indicators of strategic performance are as follows:
+
+  Annual Profit  | Max Drawdown  | Sharpe Ratio
+  :----: | :-----: | :------:  
+  32.5%  | 33.0% | 17.0
+<br>  
+ 
+  - LTC
+Strategy net value curve:
+![strategy net value on LTC](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_LTC.png)
+
+The statistical indicators of strategic performance are as follows:
+
+  Annual Profit  | Max Drawdown  | Sharpe Ratio
+  :----: | :-----: | :------:  
+  72.2%  | 77.6% | 5.62
+<br>  
+  
+  - XRP
+Strategy net value curve:
+![strategy net value on btc](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_XRP.png)
+
+The statistical indicators of strategic performance are as follows:
+
+  Annual Profit  | Max Drawdown  | Sharpe Ratio
+  :----: | :-----: | :------:  
+  540.2%  | 55.4% | 11.0
+
