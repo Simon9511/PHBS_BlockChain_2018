@@ -148,39 +148,52 @@ Short-term trends in the market can be quantified using short-period moving aver
 This strategy also requires two judgments: buy judgements and sell judgement. The criteria are as follows:
 - When the target's 5-day moving average value is greater than the 30-day moving average value, it means the market's short-term uptrend is strong, so we need to carry out the buying operation.
 - When the target 5-day moving average value is less than the 10-day moving average, it indicates that the short-term downtrend of the market is strong, and we should sell out the target.<br>
+
 The reason why when making the buy-in judgment we use the 30-day moving average while the 10-day moving average is used when making selling judgement is because when we make the buying judgment, we hope to wait for the trend signal to be fully confirmed and then buy the position. Although using 30-day average value, the buying decision may be made a little later and we may lose some part of profit, it helps us to increase the accuracy of the judgement. When making selling decision, by using the 10-day moving average to judge, we can ensure that when the downtrend comes we can stop the loss timely.
 In this strategy, we did not use many parameters, because when the numbers of parameters increase, the model has the risk of over-fitting. The simplest and straightforward idea helps us to test whether this investment logic is effective.
-3.3 Strategy performance
+
+## 3.3 Strategy performance
 We still tested our strategic thinking on four digital currencies. The results of the strategy are as follows:
-- ETH
+- BTC
 Strategy net value curve:
-![strategy net value on eth](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_ETH.png)<br>
+![strategy net value on BTC](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_MA_BTC.png)<br>
 
 The statistical indicators of strategic performance are as follows:
 
   Annual Profit  | Max Drawdown  | Sharpe Ratio
   :----: | :-----: | :------:  
-  32.5%  | 33.0% | 17.0
+  86.1%  | 67.6% | 4.40
+<br>  
+ 
+- ETH
+Strategy net value curve:
+![strategy net value on eth](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_MA_ETH.png)<br>
+
+The statistical indicators of strategic performance are as follows:
+
+  Annual Profit  | Max Drawdown  | Sharpe Ratio
+  :----: | :-----: | :------:  
+  46.4%  | 51.4% | 27.79
 <br>  
  
   - LTC
 Strategy net value curve:
-![strategy net value on LTC](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_LTC.png)
+![strategy net value on LTC](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_MA_LTC.png)
 
 The statistical indicators of strategic performance are as follows:
 
   Annual Profit  | Max Drawdown  | Sharpe Ratio
   :----: | :-----: | :------:  
-  72.2%  | 77.6% | 5.62
+  124%  | 53.8% | 30.79
 <br>  
   
   - XRP
 Strategy net value curve:
-![strategy net value on btc](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_XRP.png)
+![strategy net value on btc](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_MA_XRP.png)
 
 The statistical indicators of strategic performance are as follows:
 
   Annual Profit  | Max Drawdown  | Sharpe Ratio
   :----: | :-----: | :------:  
-  540.2%  | 55.4% | 11.0
+  718.9%  | 67.2% | 6.94
 
