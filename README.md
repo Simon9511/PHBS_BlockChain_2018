@@ -75,9 +75,13 @@ __$DIplusN$ and $DIminusN$ describe recent ups and downs respectively__. Whether
 Since $ADX$ is the smoothed mean of $DX$, __$ADX$ can describe the strength of recent trends__. Because the absolute value is taken when calculating $DX$, this results in $ADX$ values ranging from 0 to 100, so $ADX$ itself only describes the strength of the trend and does not indicate the direction of the trend. But we can still judge __the direction of the trend by the size of $DIplusN$ and $DIminusN$ (or other methods)__.
 
 The blue curve in the figure below is the ADX value of the weekly frequency data of the Shanghai Composite Index over the past 12 years (n = 8 when calculating the smoothing mean). It is not difficult to see that __there is significant rising trend in the circled area__. And __at the same time the ADX value in these area is also significantly high__, which means ADX indicators can indicate the strength of the trend of stock price.
+
 ![000001.XSHG ADX](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/ADX_000001.png)
+
 We use the same parameters to calculate the ADX indicator of BTC. And we can see from the picture below that ADX can also indicates significant trend in BTC price (in the circled area, there is a significant rising trend in BTC with a relatively high ADX value).
+
 ![BTC ADX](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/ADX_BTC.png)
+
 From the graph above, you may notice that even when there is strong downward trend in the market, the ADX value is still very high, and think ADX may have some mistake in these situations. Actually, as we said earlier, the ADX indicator is only used to judge the strength of the trend, not to judge the direction of the trend. Therefore, when constructing a strategy, we will first judge the strength of the trend according to the ADX indicator. If the trend is strong, we will judge the direction of the trend based on other criterion. Therefore, the fact that the ADX index is high when the market falls does not affect the construction of our strategy.
 
 ## 2.3 ADX timing strategy construction
