@@ -12,7 +12,7 @@ Quantitative investment refers to the way of trading for obtaining stable income
 Because the current kinds of cryptocurrency is relatively small in compared with stocks (the Chinese stock market has more than 3,000 stocks), the quantitative stock selection strategy is basically not applicable to cryptocurrency. Considering that the quantitative timing strategy operates on the same target, we can try to apply the quantitative timing strategy to the cryptocurrency.<br>
 There are many types of quantitative timing strategies. Considering the lack of fundamental data in cryptocurrency, we adapt technical indicators to construct quantitative timing strategies for cryptocurrency.
 
-## 1.2 Strategic core idea
+## 1.2 Strategy core idea
 The core idea of this paper's strategy is to judge the current price trend according to the technical indicators, and to buy the target when rising trends appear and earn the profits by following the trend. And if there are downward trends, we just sell out the portfolio to stop loss.
 
 This paper mainly uses two technical indicators (MA and ADX). These two technical indicators are both calculated from price data of the target and indicate the trend of the target price. Based on the value of these indicators, we can determine the present trend and make our investment decision.
