@@ -5,10 +5,11 @@ Cryptocurrency is a kind of electronic currency based on cryptography. In 2008, 
 
 # 1 Introduction
 ## 1.1	Introduction to quantitative investment
-Quantitative investment refers to the way of trading for obtaining stable income through quantitative methods and computer programmatically issuing trading orders. Currently, it is mainly used in stocks, futures and some financial derivatives. There are two main branches of quantitative investment: quantitative stock selection strategies and quantitative timing strategies. 
+Quantitative investment refers to the way of trading for obtaining stable income through quantitative methods and computer programmatically issuing trading orders. Currently, it is mainly used in stocks, futures and some financial derivatives. There are two main branches of quantitative investment: __quantitative stock selection strategies__ and __quantitative timing strategies__. 
 - Quantitative stock selection is to use some criteria to determine a portfolio from a large pool of investment targets to obtain excess returns. 
 - Quantitative timing is to determine the trading time for the same target and earn the profit based on the difference between the bid-ask spread on the same target.<br>
-Because the current type of cryptocurrency is relatively small in compared with stocks (the Chinese stock market has more than 3,000 stocks), the quantitative stock selection strategy is basically not applicable to cryptocurrency. Considering that the quantitative timing strategy operates on the same target, we can try to apply the quantitative timing strategy to the cryptocurrency.
+
+Because the current kinds of cryptocurrency is relatively small in compared with stocks (the Chinese stock market has more than 3,000 stocks), the quantitative stock selection strategy is basically not applicable to cryptocurrency. Considering that the quantitative timing strategy operates on the same target, we can try to apply the quantitative timing strategy to the cryptocurrency.<br>
 There are many types of quantitative timing strategies. Considering the lack of fundamental data in cryptocurrency, we adapt technical indicators to construct quantitative timing strategies for cryptocurrency.
 
 ## 1.2 Strategic core idea
