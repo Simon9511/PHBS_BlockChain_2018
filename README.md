@@ -106,7 +106,7 @@ From the results of the strategy backtesting, it is obvious that ADX strategy is
 We also use our ADX strategy on other cryptocurrency to see its performance.
   - ETH
 Strategy net value curve:
-![strategy net value on eth](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_ETH.png)
+![strategy net value on eth](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_ETH.png)<br>
 The statistical indicators of strategic performance are as follows:
 
   Annual Profit  | Max Drawdown  | Sharpe Ratio
