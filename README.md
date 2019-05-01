@@ -1,5 +1,5 @@
 # PHBS_BlockChain_2018
-Effectiveness of Quantitative Investment Strategies on Bitcoin
+Effectiveness of Quantitative Investment Strategies on Cryptocurrency
 ===
 Cryptocurrency is a kind of electronic currency based on cryptography. In 2008, with the concept of Bitcoin proposed by Nakamoto, the cryptocurrency began to attract more and more attention from mainstream society. Because cryptocurrency such as Bitcoin is currently available for trading on many public exchanges, which is like stocks, it’s reasonable to think that the quantitative investment method which has been proved effective in stocks market may also be effective in cryptocurrency. The core idea of this paper is to test whether the quantitative investment strategy that has been successfully applied to the stock market is still valid for cryptocurrency such as Bitcoin. This paper mainly constructs the timing strategy based on the technical indicators derived from the stock price such as ADX, MA, and judges the effectiveness of the investment strategy according to the final result of the strategy.
 
