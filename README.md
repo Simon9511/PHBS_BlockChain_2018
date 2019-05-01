@@ -234,3 +234,6 @@ Due to limited time, many strategy ideas have not been further verified in this 
 - 1. Test the application of more technical factors. This paper mainly tests the timing strategies derived from the two technical factors ADX and MA. In fact, in addition to these two factors, there are many technical factors (such as HMA, FRAMA, KAMA, etc.). Every indicator has different characrisitics. We can test the effectiveness of these technology factor timing strategies on cryptocurrency.
 - 2. Multiple indicator resonance strategy. It is not accurate enough to use only one technical factor for timing. When the validity of more technical factors is tested, we can use multiple technical factors to judge at a time. When multiple factors indicate the buying signal at the same time, we carry out the buying operation. In this way, our winning rate will be further improved.
 
+# 6 Reference
+Definition of ADX. Retrieved from https://baike.baidu.com/item/adx/10703194 <br>
+Definition of MA. Retrieved from https://baike.baidu.com/item/%E7%A7%BB%E5%8A%A8%E5%B9%B3%E5%9D%87%E7%BA%BF/217887?fromtitle=MA&fromid=1511750
