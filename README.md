@@ -28,27 +28,28 @@ All data used in this article is obtained from [__cryptodatadownload.com__](www.
 cryptodatadownload.com provides daily, hourly quote data for cryptocurrency on multiple cryptocurrency trading platforms. To facilitate uniform comparison, we quote the quotation data of the [__Bitstamp__](https://www.bitstamp.net/) trading platform here (in US dollars). Founded in 2011, Bitstamp is one of the world's oldest cryptocurrency exchange platform. Therefore, using data from Bitstamp is very reliable.
 
 # 2 ADX strategy
-The ADX strategy is based on the investment strategy of the technical indicator ADX. The ADX indicator is a composite technical indicator calculated by the opening price, closing price, highest price and lowest price of the target, which can be used to quantify the current market trend strength. According to the ADX indicator, we first judge whether there is a trend in the current market. If there is a trend, then compare with the recent increase and other data to determine whether it is an upward trend, if it is determined to be an upward trend, then follow the trend to buy to earn excess returns.
+The ADX strategy is based on the investment strategy of the technical indicator __ADX__. The ADX indicator is a composite technical indicator calculated by the __opening price, closing price, highest price and lowest price__ of the target, which can be used to quantify the current market trend strength. According to the ADX indicator, we first judge whether there is a trend in the current market. If there is a trend, then compare with the recent increase and other data to determine whether it is an upward trend, if it is determined to be an upward trend, then follow the trend to buy to earn excess returns.
 
 ## 2.1 ADX calculation method
-1. Calculate $UpMove$ and $DownMove$:
+1. Calculate __$UpMove$__ and __$DownMove$__:
 $$
 UpMove_{t}=high_{t}-high_{t-1}
 $$
 $$
 DownMove_{t}=low_{t-1}-low_{t}
 $$
-2. Calculate $DMplus$ and $DMminus$:<br>
+
+2. Calculate __$DMplus$__ and __$DMminus$__:<br>
 When $UpMove > max(DownMove, 0)$, $DMplus=UpMove$; else, $DMplus=0$<br>
 When $DownMove > max(UpMove, 0)$, $DMminus=DownMove$; else, $DMminus=0$<br>
 
-3. Calculate the true volatility of the day (denoted as $TR$), which is equal to the maximum of the following three values: the difference between $high_t$ and $low_t$, the absolute value of difference between $high_t$ and $close_{t-1}$ and the absolute value of the difference between $low_t$ and $close_{t-1}$.
+3. Calculate the true volatility of the day (denoted as __$TR$__), which is equal to the maximum of the following three values: the difference between $high_t$ and $low_t$, the absolute value of difference between $high_t$ and $close_{t-1}$ and the absolute value of the difference between $low_t$ and $close_{t-1}$.
 
-4. For $DMplus$, $DMminus$, and $TR$, we use the smooth motion algorithm to calculate the sum of n periods, denoted as $DMplusN$, $DMminusN$, and $TRN$ respectively. Take $TRN$ as an example, its calculation method is:<br>
+4. For $DMplus$, $DMminus$, and $TR$, we use the smooth motion algorithm to calculate the sum of n periods, denoted as __$DMplusN$__, __$DMminusN$__, and __$TRN$__ respectively. Take $TRN$ as an example, its calculation method is:<br>
 - The first value of $TRN$ is the sum of $TR$ for the past n days (including the current day);<br>
 - Starting from the second value, the $TRN_t = TRN_{t-1} × (n - 1) / n + TR_t$
 
-5. Calculate $DIplusN$ and $DIminusN$:
+5. Calculate __$DIplusN$__ and __$DIminusN$__:
 $$
 DIplusN = 100 * DMplusN / TRN
 $$
@@ -56,18 +57,18 @@ $$
 DIminusN = 100 * DMminusN / TRN
 $$
 
-6. Calculate the direction motion index $DX$:
+6. Calculate the direction motion index __$DX$__:
 $$
 DX = 100 * |(DIplusN – DIminusN) / (DIplusN + DIminusN)|
 $$
 
-7. Calculate $ADX$. It is the n-period smooth moving average of $DX$. Its calculation method is:<br>
+7. Calculate __$ADX$__. It is the n-period smooth moving average of $DX$. Its calculation method is:<br>
 - The first value of $ADX$ is the mean of $DX$ over the past n days (including the current day);<br>
 - Starting from the second value, $ADX_t = (ADX_{t-1} * (n-1) + DX_t) / n$<br>
 
 ## 2.2 Meaning of ADX indicators
-Although the process of calculating ADX is cumbersome, during which we use a lot of auxiliary variables, the meaning behind ADX is very clear. $DIplusN$ and $DIminusN$ describe recent ups and downs respectively. Whether it is rising or falling, as long as the trend is significant, there will always be a larger one among $DIplusN$ and $DIminusN$. So the value of $DX = 100 × abs((DIplusN – DIminusN) / (DIplusN + DIminusN))$ will range from 0 to 100. The more significant the trend is, the bigger the $DX$ is.Since $ADX$ is the smoothed mean of $DX$, $ADX$ can describe the strength of recent trends. Because the absolute value is taken when calculating $DX$, this results in $ADX$ values ranging from 0 to 100, so $ADX$ itself only describes the strength of the trend and does not indicate the direction of the trend. However, the direction of the trend can still be judged by the size of $DIplusN$ and $DIminusN$ (or other methods).
-The blue curve in the figure below is the ADX value of the weekly frequency data of the Shanghai Composite Index over the past 12 years (n = 8 when calculating the smoothing mean). It is not difficult to see that there is significant rising trend in the circled area. And at the same time the ADX value in these area is also significantly high, which means ADX indicators can indicate the strength of the trend of stock price.
+Although the process of calculating ADX is cumbersome, during which we use a lot of auxiliary variables, the meaning behind ADX is very clear. __$DIplusN$ and $DIminusN$ describe recent ups and downs respectively__. Whether it is rising or falling, as long as the trend is significant, there will always be a larger one among $DIplusN$ and $DIminusN$. So the value of $DX = 100 × abs((DIplusN – DIminusN) / (DIplusN + DIminusN))$ will range from 0 to 100. __The more significant the trend is, the bigger the $DX$ is__.Since $ADX$ is the smoothed mean of $DX$, __$ADX$ can describe the strength of recent trends__. Because the absolute value is taken when calculating $DX$, this results in $ADX$ values ranging from 0 to 100, so $ADX$ itself only describes the strength of the trend and does not indicate the direction of the trend. However, __the direction of the trend can still be judged by the size of $DIplusN$ and $DIminusN$ (or other methods)__.
+The blue curve in the figure below is the ADX value of the weekly frequency data of the Shanghai Composite Index over the past 12 years (n = 8 when calculating the smoothing mean). It is not difficult to see that __there is significant rising trend in the circled area__. And __at the same time the ADX value in these area is also significantly high__, which means ADX indicators can indicate the strength of the trend of stock price.
 ![000001.XSHG ADX](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/ADX_000001.png)
 We use the same parameters to calculate the ADX indicator of BTC. And we can see from the picture below that ADX can also indicates significant trend in BTC price (in the circled area, there is a significant rising trend in BTC with a relatively high ADX value).
 ![BTC ADX](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/ADX_BTC.png)
@@ -76,13 +77,15 @@ From the graph above, you may notice that even when there is strong downward tre
 ## 2.3 ADX timing strategy construction
 ### 2.3.1 Strategy core idea
 According to the above mentioned repeatedly, the ADX indicator can judge the significant trend very well. Therefore, when constructing an investment strategy, we first judge whether the current market is in a trend based on the value of the ADX. When ADX is greater than a certain threshold, we believe that it is currently in a trend situation and make the next decision. When the market is in a trend situation, we can judge whether the current stock price is in a rising trend or a downward trend based on the current stock price and the stock price comparison in the previous period.
+
 ### 2.3.2 Strategy details
-In this strategy, we need to complete two judgments: buy judgment and sell judgment.
+In this strategy, we need to complete two judgments: __buy judgment__ and __sell judgment__.
 When the market conditions meet the buying criteria, we buy the target and continue to hold it. When the market conditions touch the selling criteria, we sell the portfolio and obtain the profit. The strategy is as follows:
-- When the ADX value is greater than 35, and the stock price is greater than the stock price before 30 days, we buy the target.
-- When the stock price decreased by 10% compared to the price of a month ago, or the max drawdown of recent one month is more than 15%, the sell out operation will be carried out. Otherwise we will always hold the position.<br>
+__- When the ADX value is greater than 35, and the stock price is greater than the stock price before 30 days, we buy the target.
+- When the stock price decreased by 10% compared to the price of a month ago, or the max drawdown of recent one month is more than 15%, the sell out operation will be carried out. Otherwise we will always hold the position.<br>__
 
 The opening criteria of this strategy are very strict. When ADX is greater than 35 and the stock price is rising, we believe that the significant uptrend is already determined. It is precisely because our opening criteria are very strict, unless there are special circumstances, we will always keep the investment target. We only close the position when the net value of the stock falls below the stop loss line we set.
+
 ## 2.4 Strategy performance
 ### 2.4.1 Shanghai Composite Index
 First, we perform back test on the Shanghai Composite Index. The time period for the backtesting is from 2005 to 2018. Because this time period includes various market conditions such as bear market, bull market and shock market, the back test results are more persuative.<br>
@@ -94,7 +97,7 @@ The strategy performance statistical indicators:
   :----: | :-----: | :------:  
   17.2%  | 26.2% | 2.27
 
-From the net value curve of the strategy back test, we can see that this strategy can capture the market's rising trend (as shown in the black box), and this strategy will not trade when the market is volatile. After 10 years of investment, the net value of the strategy has more than 7 times, and the annualized rate of return has reached 17.2%, and the Sharp rate has reached 2.27, which is a good result. The maximum drawback of the strategy is 26.2%, which is relatively large, because in order not to miss the big uptrend, we set the stop loss line loosely. The advantage of this is that it will not miss the follow-up trend when the big trend comes, and the bad thing is that when the trend ends, the drawback is relatively large.
+From the net value curve of the strategy back test, we can see that this strategy can capture the market's rising trend (as shown in the black box), and this strategy will not trade when the market is volatile. After 10 years of investment, the net value of the strategy has more than __7 times__, and the annualized rate of return has reached __17.2%__, and the Sharp rate has reached __2.27__, which is a good result. The maximum drawback of the strategy is 26.2%, which is relatively large, because in order not to miss the big uptrend, we set the stop loss line loosely. The advantage of this is that it will not miss the follow-up trend when the big trend comes, and the bad thing is that when the trend ends, the drawback is relatively large.
 
 ### 2.4.2 Bitcoin
 Next, let us look at the application of this strategy on Bitcoin. In order to avoid overfitting problem, we don't choose a special parameter for Bitcoin and just use the same parameters as the above strategy for backtesting. The backtesting period was selected from 2005 to 2019. The strategy net value curve is shown below:
@@ -151,8 +154,8 @@ Short-term trends in the market can be quantified using short-period moving aver
 
 ## 3.2 Strategy details
 This strategy also requires two judgments: buy judgements and sell judgement. The criteria are as follows:
-- When the target's 5-day moving average value is greater than the 30-day moving average value, it means the market's short-term uptrend is strong, so we need to carry out the buying operation.
-- When the target 5-day moving average value is less than the 10-day moving average, it indicates that the short-term downtrend of the market is strong, and we should sell out the target.<br>
+__- When the target's 5-day moving average value is greater than the 30-day moving average value, it means the market's short-term uptrend is strong, so we need to carry out the buying operation.
+- When the target 5-day moving average value is less than the 10-day moving average, it indicates that the short-term downtrend of the market is strong, and we should sell out the target.<br>__
 
 The reason why when making the buy-in judgment we use the 30-day moving average while the 10-day moving average is used when making selling judgement is because when we make the buying judgment, we hope to wait for the trend signal to be fully confirmed and then buy the position. Although using 30-day average value, the buying decision may be made a little later and we may lose some part of profit, it helps us to increase the accuracy of the judgement. When making selling decision, by using the 10-day moving average to judge, we can ensure that when the downtrend comes we can stop the loss timely.
 In this strategy, we did not use many parameters, because when the numbers of parameters increase, the model has the risk of over-fitting. The simplest and straightforward idea helps us to test whether this investment logic is effective.
