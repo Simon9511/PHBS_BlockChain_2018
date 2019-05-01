@@ -67,7 +67,12 @@ $$
 - Starting from the second value, $ADX_t = (ADX_{t-1} * (n-1) + DX_t) / n$<br>
 
 ## 2.2 Meaning of ADX indicators
-Although the process of calculating ADX is cumbersome, during which we use a lot of auxiliary variables, the meaning behind ADX is very clear. __$DIplusN$ and $DIminusN$ describe recent ups and downs respectively__. Whether it is rising or falling, as long as the trend is significant, there will always be a larger one among $DIplusN$ and $DIminusN$. So the value of $DX = 100 × abs((DIplusN – DIminusN) / (DIplusN + DIminusN))$ will range from 0 to 100. __The more significant the trend is, the bigger the $DX$ is__.Since $ADX$ is the smoothed mean of $DX$, __$ADX$ can describe the strength of recent trends__. Because the absolute value is taken when calculating $DX$, this results in $ADX$ values ranging from 0 to 100, so $ADX$ itself only describes the strength of the trend and does not indicate the direction of the trend. However, __the direction of the trend can still be judged by the size of $DIplusN$ and $DIminusN$ (or other methods)__.
+Although the process of calculating ADX is cumbersome, during which we use a lot of auxiliary variables, the meaning behind ADX is very clear.
+
+__$DIplusN$ and $DIminusN$ describe recent ups and downs respectively__. Whether it is rising or falling, as long as the trend is significant, there will always be a larger one among $DIplusN$ and $DIminusN$. So the value of $DX = 100 × abs((DIplusN – DIminusN) / (DIplusN + DIminusN))$ will range from 0 to 100. __The more significant the trend is, the bigger the $DX$ is__.
+
+Since $ADX$ is the smoothed mean of $DX$, __$ADX$ can describe the strength of recent trends__. Because the absolute value is taken when calculating $DX$, this results in $ADX$ values ranging from 0 to 100, so $ADX$ itself only describes the strength of the trend and does not indicate the direction of the trend. But we can still judge __the direction of the trend by the size of $DIplusN$ and $DIminusN$ (or other methods)__.
+
 The blue curve in the figure below is the ADX value of the weekly frequency data of the Shanghai Composite Index over the past 12 years (n = 8 when calculating the smoothing mean). It is not difficult to see that __there is significant rising trend in the circled area__. And __at the same time the ADX value in these area is also significantly high__, which means ADX indicators can indicate the strength of the trend of stock price.
 ![000001.XSHG ADX](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/ADX_000001.png)
 We use the same parameters to calculate the ADX indicator of BTC. And we can see from the picture below that ADX can also indicates significant trend in BTC price (in the circled area, there is a significant rising trend in BTC with a relatively high ADX value).
@@ -81,8 +86,8 @@ According to the above mentioned repeatedly, the ADX indicator can judge the sig
 ### 2.3.2 Strategy details
 In this strategy, we need to complete two judgments: __buy judgment__ and __sell judgment__.
 When the market conditions meet the buying criteria, we buy the target and continue to hold it. When the market conditions touch the selling criteria, we sell the portfolio and obtain the profit. The strategy is as follows:
-__- When the ADX value is greater than 35, and the stock price is greater than the stock price before 30 days, we buy the target.
-- When the stock price decreased by 10% compared to the price of a month ago, or the max drawdown of recent one month is more than 15%, the sell out operation will be carried out. Otherwise we will always hold the position.<br>__
+- __When the ADX value is greater than 35, and the stock price is greater than the stock price before 30 days, we buy the target.__
+- __When the stock price decreased by 10% compared to the price of a month ago, or the max drawdown of recent one month is more than 15%, the sell out operation will be carried out. Otherwise we will always hold the position.__<br>
 
 The opening criteria of this strategy are very strict. When ADX is greater than 35 and the stock price is rising, we believe that the significant uptrend is already determined. It is precisely because our opening criteria are very strict, unless there are special circumstances, we will always keep the investment target. We only close the position when the net value of the stock falls below the stop loss line we set.
 
@@ -154,8 +159,8 @@ Short-term trends in the market can be quantified using short-period moving aver
 
 ## 3.2 Strategy details
 This strategy also requires two judgments: buy judgements and sell judgement. The criteria are as follows:
-__- When the target's 5-day moving average value is greater than the 30-day moving average value, it means the market's short-term uptrend is strong, so we need to carry out the buying operation.
-- When the target 5-day moving average value is less than the 10-day moving average, it indicates that the short-term downtrend of the market is strong, and we should sell out the target.<br>__
+- __When the target's 5-day moving average value is greater than the 30-day moving average value, it means the market's short-term uptrend is strong, so we need to carry out the buying operation.__
+- __When the target 5-day moving average value is less than the 10-day moving average, it indicates that the short-term downtrend of the market is strong, and we should sell out the target.__<br>
 
 The reason why when making the buy-in judgment we use the 30-day moving average while the 10-day moving average is used when making selling judgement is because when we make the buying judgment, we hope to wait for the trend signal to be fully confirmed and then buy the position. Although using 30-day average value, the buying decision may be made a little later and we may lose some part of profit, it helps us to increase the accuracy of the judgement. When making selling decision, by using the 10-day moving average to judge, we can ensure that when the downtrend comes we can stop the loss timely.
 In this strategy, we did not use many parameters, because when the numbers of parameters increase, the model has the risk of over-fitting. The simplest and straightforward idea helps us to test whether this investment logic is effective.
