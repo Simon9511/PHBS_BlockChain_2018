@@ -196,4 +196,23 @@ The statistical indicators of strategic performance are as follows:
   Annual Profit  | Max Drawdown  | Sharpe Ratio
   :----: | :-----: | :------:  
   718.9%  | 67.2% | 6.94
+  
+## 3.4 Results analysis
+From the backtest results, the MA strategy can achieve excess returns on all four cryptocurrencies. Among them, the strategy performance is better on ETH and LTC. This is because the price trend of these two cryptocurrencies is more obvious. The MA strategy can effectively filter out the fluctuation period and obtain the benefits in the trend situation.
+
+# 4 Summary
+## 4.1 Strategy effectiveness
+In general, the classic quantitative timing strategy can definitely obtain absolute profit on cryptocurrencies. For some targets, some strategies can also effectively obtain excess returns. This indicates that the cryptocurrency price is not valid. Among them, the ADX strategy can obtain excess returns on ETH, LTC and XRB; the MA strategy can obtain excess returns on all four digital currencies.
+
+## 4.2 Analysis of bad performance on Bitcoin
+From the backtest results we can see that the two quantitative strategies are not ideal for bitcoin, and even do not beat the benchmark price. This is because Bitcoin has a crazy rise period in the early stage. At this stage, it is very difficult for us to keep up with the price increase of Bitcoin, because every time we make a wrong judgment, we will lose a lot of profits. After the bitcoin price bubble burst, the volatility of bitcoin prices is very strong, and our strategy is difficult to make a correct judgment in this highly volatile market.
+
+## 4.3 Best Investment Strategy for cryptocurrency
+- When the price of digital money rises wildly (such as early bitcoin), any quantitative investment strategy is very difficult to work. In fact, just buying Bitcoin and holding it at this stage is the best investment strategy.
+- When the digital currency price bubble bursts and the market tends to be rational, we can use quantitative timing strategies to obtain excess returns. As mentioned above, our strategy can achieve stable excess returns on both ETH and LTC.
+
+# 4 Future prospects
+Due to limited time, many strategy ideas have not been further verified in this paper. If there is an opportunity in the future, I hope to conduct further research on the basis of this article.
+- 1. Test the application of more technical factors. This paper mainly tests the timing strategies derived from the two technical factors ADX and MA. In fact, in addition to these two factors, there are many technical factors (such as HMA, FRAMA, KAMA, etc.). Every indicator has different characrisitics. We can test the effectiveness of these technology factor timing strategies on cryptocurrency.
+- 2. Multiple indicator resonance strategy. It is not accurate enough to use only one technical factor for timing. When the validity of more technical factors is tested, we can use multiple technical factors to judge at a time. When multiple factors indicate the buying signal at the same time, we carry out the buying operation. In this way, our winning rate will be further improved.
 
