@@ -21,6 +21,7 @@ This paper mainly uses two technical indicators (MA and ADX). These two technica
 The timing strategy is used on the same target, earning profit by choosing the buying and selling time and following the rising trend. Therefore, the target applied by the timing strategy should meet two major conditions: First, the target has certain volatility, because if the price of the target is too stable, it's hard to obtain profit from difference between buying price and selling price; Second, the target price has a significant rising trend, because if the target price does not have a trend and is always oscillating, it is impossible to earn excess returns by following the trend.
 
 The bitcoin price perfectly meets the above two conditions. Bitcoin prices have some volatility, and they also have some obvious rising trend, and this trend lasts relatively long. The chart below shows the trend of bitcoin prices from 2017.10 to 2018.10. The circled part shows a clear rising trend.
+<br>
 ![BTC price from 2017.10 to 2018.10](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/BTC_price.jpg "BTC price from 2017.10 to 2018.10")
 
 ## 1.4 Data source
