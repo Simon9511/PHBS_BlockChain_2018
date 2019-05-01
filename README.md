@@ -82,12 +82,13 @@ The opening criteria of this strategy are very strict. When ADX is greater than 
 ### 2.4.1 Shanghai Composite Index
 First, we perform back test on the Shanghai Composite Index. The time period for the backtesting is from 2005 to 2018. Because this time period includes various market conditions such as bear market, bull market and shock market, the back test results are more persuative.<br>
 The strategy net value curve:<br>
-![strategy netvalue on SCI]()
+![strategy netvalue on SCI](https://github.com/Simon9511/PHBS_BlockChain_2018/blob/master/picture/strategy_000001.png)
 The strategy performance statistical indicators:
 
   Annual Profit  | Max Drawdown  | Sharpe Ratio
   :----: | :-----: | :------:  
   17.2%  | 26.2% | 2.27
+
 
 
 
